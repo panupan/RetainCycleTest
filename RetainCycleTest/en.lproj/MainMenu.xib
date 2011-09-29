@@ -1410,13 +1410,14 @@
 											<bool key="EncodedWithXMLCoder">YES</bool>
 											<string>NSView</string>
 											<string>RetainCycleTestView</string>
+											<string>TearDownTestView</string>
 											<string>SelfProxyTestView</string>
 										</object>
 										<reference key="NSDelegate" ref="674530688"/>
 										<object class="NSComboTableView" key="NSTableView" id="637008892">
 											<reference key="NSNextResponder"/>
 											<int key="NSvFlags">274</int>
-											<string key="NSFrameSize">{13, 21}</string>
+											<string key="NSFrameSize">{13, 63}</string>
 											<reference key="NSSuperview"/>
 											<reference key="NSWindow"/>
 											<string key="NSReuseIdentifierKey">_NS:108</string>
@@ -1602,7 +1603,7 @@
 							</object>
 						</object>
 					</object>
-					<object class="NSMutableArray" key="NSToolbarIBAllowedItems">
+					<object class="NSArray" key="NSToolbarIBAllowedItems">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<reference ref="39997486"/>
 						<reference ref="237904872"/>
@@ -3978,6 +3979,7 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<string>NSView</string>
 						<string>RetainCycleTestView</string>
+						<string>TearDownTestView</string>
 						<string>SelfProxyTestView</string>
 					</object>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>

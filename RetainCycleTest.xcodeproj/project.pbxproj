@@ -16,6 +16,7 @@
 		82EB855A14345ED900DA8757 /* RetainCycleTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EB855914345ED900DA8757 /* RetainCycleTestView.m */; };
 		82EB855D1434676B00DA8757 /* SelfProxyTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EB855C1434676B00DA8757 /* SelfProxyTestView.m */; };
 		82EB85601434E17200DA8757 /* SelfProxyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EB855F1434E17200DA8757 /* SelfProxyView.m */; };
+		82EB85B31435313C00DA8757 /* TearDownTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EB85B21435313C00DA8757 /* TearDownTestView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		82EB855C1434676B00DA8757 /* SelfProxyTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfProxyTestView.m; sourceTree = "<group>"; };
 		82EB855E1434E17200DA8757 /* SelfProxyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfProxyView.h; sourceTree = "<group>"; };
 		82EB855F1434E17200DA8757 /* SelfProxyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfProxyView.m; sourceTree = "<group>"; };
+		82EB85B11435313C00DA8757 /* TearDownTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TearDownTestView.h; sourceTree = "<group>"; };
+		82EB85B21435313C00DA8757 /* TearDownTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TearDownTestView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 				82EB85481434401000DA8757 /* RetainCycleTestAppDelegate.m */,
 				82EB855814345ED900DA8757 /* RetainCycleTestView.h */,
 				82EB855914345ED900DA8757 /* RetainCycleTestView.m */,
+				82EB85B11435313C00DA8757 /* TearDownTestView.h */,
+				82EB85B21435313C00DA8757 /* TearDownTestView.m */,
 				82EB855B1434676B00DA8757 /* SelfProxyTestView.h */,
 				82EB855C1434676B00DA8757 /* SelfProxyTestView.m */,
 				82EB855E1434E17200DA8757 /* SelfProxyView.h */,
@@ -182,6 +187,7 @@
 				82EB855A14345ED900DA8757 /* RetainCycleTestView.m in Sources */,
 				82EB855D1434676B00DA8757 /* SelfProxyTestView.m in Sources */,
 				82EB85601434E17200DA8757 /* SelfProxyView.m in Sources */,
+				82EB85B31435313C00DA8757 /* TearDownTestView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +307,7 @@
 				82EB85511434401000DA8757 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
