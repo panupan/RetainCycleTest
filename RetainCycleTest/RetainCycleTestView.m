@@ -1,28 +1,40 @@
 //
-//  BindedTestView.m
+//  RetainCycleTestView.m
 //  RetainCycleTest
 //
 //  Created by Panupan Sriautharawong on 9/29/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Panupan.com. All rights reserved.
 //
 
-#import "BindedTestView.h"
+#import "RetainCycleTestView.h"
 
-@implementation BindedTestView
+@implementation RetainCycleTestView
+@synthesize tacos, childFrame;
 
 - (id)initWithFrame:(NSRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code here.
+        child = [[NSView alloc] initWithFrame:frame];    
+        
+        // This causes a retain cycle
+        [child bind:@"frame" toObject:self withKeyPath:@"childFrame" options:nil];
     }
     
     return self;
 }
 
+- (void)dealloc
+{
+    [child unbind:@"childFrame"];
+    [super dealloc];
+}
+
 - (void)drawRect:(NSRect)dirtyRect
 {
     // Drawing code here.
+    [[NSColor greenColor] setFill];
+    NSRectFill(dirtyRect);
 }
 
 @end

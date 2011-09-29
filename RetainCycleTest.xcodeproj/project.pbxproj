@@ -13,6 +13,9 @@
 		82EB85461434401000DA8757 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 82EB85441434401000DA8757 /* Credits.rtf */; };
 		82EB85491434401000DA8757 /* RetainCycleTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EB85481434401000DA8757 /* RetainCycleTestAppDelegate.m */; };
 		82EB854C1434401000DA8757 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EB854A1434401000DA8757 /* MainMenu.xib */; };
+		82EB855A14345ED900DA8757 /* RetainCycleTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EB855914345ED900DA8757 /* RetainCycleTestView.m */; };
+		82EB855D1434676B00DA8757 /* SelfProxyTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EB855C1434676B00DA8757 /* SelfProxyTestView.m */; };
+		82EB85601434E17200DA8757 /* SelfProxyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EB855F1434E17200DA8757 /* SelfProxyView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +24,20 @@
 		82EB85381434401000DA8757 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		82EB85391434401000DA8757 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		82EB853A1434401000DA8757 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		82EB853D1434401000DA8757 /* RetainCycleTest-Info.plist */ = {isa = PBXFileReference; path = "RetainCycleTest-Info.plist"; sourceTree = "<group>"; };
+		82EB853D1434401000DA8757 /* RetainCycleTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RetainCycleTest-Info.plist"; sourceTree = "<group>"; };
 		82EB853F1434401000DA8757 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		82EB85411434401000DA8757 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		82EB85431434401000DA8757 /* RetainCycleTest-Prefix.pch */ = {isa = PBXFileReference; path = "RetainCycleTest-Prefix.pch"; sourceTree = "<group>"; };
+		82EB85431434401000DA8757 /* RetainCycleTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RetainCycleTest-Prefix.pch"; sourceTree = "<group>"; };
 		82EB85451434401000DA8757 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		82EB85471434401000DA8757 /* RetainCycleTestAppDelegate.h */ = {isa = PBXFileReference; path = RetainCycleTestAppDelegate.h; sourceTree = "<group>"; };
+		82EB85471434401000DA8757 /* RetainCycleTestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RetainCycleTestAppDelegate.h; sourceTree = "<group>"; };
 		82EB85481434401000DA8757 /* RetainCycleTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RetainCycleTestAppDelegate.m; sourceTree = "<group>"; };
 		82EB854B1434401000DA8757 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		82EB855814345ED900DA8757 /* RetainCycleTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetainCycleTestView.h; sourceTree = "<group>"; };
+		82EB855914345ED900DA8757 /* RetainCycleTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetainCycleTestView.m; sourceTree = "<group>"; };
+		82EB855B1434676B00DA8757 /* SelfProxyTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfProxyTestView.h; sourceTree = "<group>"; };
+		82EB855C1434676B00DA8757 /* SelfProxyTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfProxyTestView.m; sourceTree = "<group>"; };
+		82EB855E1434E17200DA8757 /* SelfProxyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfProxyView.h; sourceTree = "<group>"; };
+		82EB855F1434E17200DA8757 /* SelfProxyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfProxyView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +91,16 @@
 		82EB853B1434401000DA8757 /* RetainCycleTest */ = {
 			isa = PBXGroup;
 			children = (
+				82EB853C1434401000DA8757 /* Supporting Files */,
 				82EB85471434401000DA8757 /* RetainCycleTestAppDelegate.h */,
 				82EB85481434401000DA8757 /* RetainCycleTestAppDelegate.m */,
+				82EB855814345ED900DA8757 /* RetainCycleTestView.h */,
+				82EB855914345ED900DA8757 /* RetainCycleTestView.m */,
+				82EB855B1434676B00DA8757 /* SelfProxyTestView.h */,
+				82EB855C1434676B00DA8757 /* SelfProxyTestView.m */,
+				82EB855E1434E17200DA8757 /* SelfProxyView.h */,
+				82EB855F1434E17200DA8757 /* SelfProxyView.m */,
 				82EB854A1434401000DA8757 /* MainMenu.xib */,
-				82EB853C1434401000DA8757 /* Supporting Files */,
 			);
 			path = RetainCycleTest;
 			sourceTree = "<group>";
@@ -164,6 +179,9 @@
 			files = (
 				82EB85421434401000DA8757 /* main.m in Sources */,
 				82EB85491434401000DA8757 /* RetainCycleTestAppDelegate.m in Sources */,
+				82EB855A14345ED900DA8757 /* RetainCycleTestView.m in Sources */,
+				82EB855D1434676B00DA8757 /* SelfProxyTestView.m in Sources */,
+				82EB85601434E17200DA8757 /* SelfProxyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

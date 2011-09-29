@@ -3,7 +3,7 @@
 //  RetainCycleTest
 //
 //  Created by Panupan Sriautharawong on 9/29/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Panupan.com. All rights reserved.
 //
 
 #import "SelfProxyView.h"
@@ -13,16 +13,30 @@
 - (id)initWithFrame:(NSRect)frame
 {
     self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code here.
+    if (self) {        
+        selfProxy = [[NSObjectController alloc] initWithContent:self];
     }
     
     return self;
 }
 
-- (void)drawRect:(NSRect)dirtyRect
+- (oneway void)release
 {
-    // Drawing code here.
+    // special case when count is 3, we are being retained twice by the object controller...
+    if ([self retainCount] == 3) {
+        [super release];        
+        [selfProxy setContent:nil];        
+        return;
+    }
+    
+    [super release];
 }
+
+- (void)dealloc
+{
+    [selfProxy release];
+    [super dealloc];
+}
+
 
 @end
