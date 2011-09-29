@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82EB85361434401000DA8757 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EB85351434401000DA8757 /* Cocoa.framework */; };
+		82EB85401434401000DA8757 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82EB853E1434401000DA8757 /* InfoPlist.strings */; };
+		82EB85421434401000DA8757 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EB85411434401000DA8757 /* main.m */; };
+		82EB85461434401000DA8757 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 82EB85441434401000DA8757 /* Credits.rtf */; };
+		82EB85491434401000DA8757 /* RetainCycleTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EB85481434401000DA8757 /* RetainCycleTestAppDelegate.m */; };
+		82EB854C1434401000DA8757 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EB854A1434401000DA8757 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		82EB85311434401000DA8757 /* RetainCycleTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetainCycleTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82EB85351434401000DA8757 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		82EB85381434401000DA8757 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		82EB85391434401000DA8757 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		82EB853A1434401000DA8757 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		82EB853D1434401000DA8757 /* RetainCycleTest-Info.plist */ = {isa = PBXFileReference; path = "RetainCycleTest-Info.plist"; sourceTree = "<group>"; };
+		82EB853F1434401000DA8757 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		82EB85411434401000DA8757 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		82EB85431434401000DA8757 /* RetainCycleTest-Prefix.pch */ = {isa = PBXFileReference; path = "RetainCycleTest-Prefix.pch"; sourceTree = "<group>"; };
+		82EB85451434401000DA8757 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		82EB85471434401000DA8757 /* RetainCycleTestAppDelegate.h */ = {isa = PBXFileReference; path = RetainCycleTestAppDelegate.h; sourceTree = "<group>"; };
+		82EB85481434401000DA8757 /* RetainCycleTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RetainCycleTestAppDelegate.m; sourceTree = "<group>"; };
+		82EB854B1434401000DA8757 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82EB852E1434401000DA8757 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EB85361434401000DA8757 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82EB85261434401000DA8757 = {
+			isa = PBXGroup;
+			children = (
+				82EB853B1434401000DA8757 /* RetainCycleTest */,
+				82EB85341434401000DA8757 /* Frameworks */,
+				82EB85321434401000DA8757 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82EB85321434401000DA8757 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82EB85311434401000DA8757 /* RetainCycleTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82EB85341434401000DA8757 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82EB85351434401000DA8757 /* Cocoa.framework */,
+				82EB85371434401000DA8757 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82EB85371434401000DA8757 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82EB85381434401000DA8757 /* AppKit.framework */,
+				82EB85391434401000DA8757 /* CoreData.framework */,
+				82EB853A1434401000DA8757 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		82EB853B1434401000DA8757 /* RetainCycleTest */ = {
+			isa = PBXGroup;
+			children = (
+				82EB85471434401000DA8757 /* RetainCycleTestAppDelegate.h */,
+				82EB85481434401000DA8757 /* RetainCycleTestAppDelegate.m */,
+				82EB854A1434401000DA8757 /* MainMenu.xib */,
+				82EB853C1434401000DA8757 /* Supporting Files */,
+			);
+			path = RetainCycleTest;
+			sourceTree = "<group>";
+		};
+		82EB853C1434401000DA8757 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82EB853D1434401000DA8757 /* RetainCycleTest-Info.plist */,
+				82EB853E1434401000DA8757 /* InfoPlist.strings */,
+				82EB85411434401000DA8757 /* main.m */,
+				82EB85431434401000DA8757 /* RetainCycleTest-Prefix.pch */,
+				82EB85441434401000DA8757 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82EB85301434401000DA8757 /* RetainCycleTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82EB854F1434401000DA8757 /* Build configuration list for PBXNativeTarget "RetainCycleTest" */;
+			buildPhases = (
+				82EB852D1434401000DA8757 /* Sources */,
+				82EB852E1434401000DA8757 /* Frameworks */,
+				82EB852F1434401000DA8757 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RetainCycleTest;
+			productName = RetainCycleTest;
+			productReference = 82EB85311434401000DA8757 /* RetainCycleTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82EB85281434401000DA8757 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 82EB852B1434401000DA8757 /* Build configuration list for PBXProject "RetainCycleTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 82EB85261434401000DA8757;
+			productRefGroup = 82EB85321434401000DA8757 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82EB85301434401000DA8757 /* RetainCycleTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82EB852F1434401000DA8757 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EB85401434401000DA8757 /* InfoPlist.strings in Resources */,
+				82EB85461434401000DA8757 /* Credits.rtf in Resources */,
+				82EB854C1434401000DA8757 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82EB852D1434401000DA8757 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EB85421434401000DA8757 /* main.m in Sources */,
+				82EB85491434401000DA8757 /* RetainCycleTestAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		82EB853E1434401000DA8757 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82EB853F1434401000DA8757 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		82EB85441434401000DA8757 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82EB85451434401000DA8757 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		82EB854A1434401000DA8757 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82EB854B1434401000DA8757 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82EB854D1434401000DA8757 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		82EB854E1434401000DA8757 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		82EB85501434401000DA8757 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RetainCycleTest/RetainCycleTest-Prefix.pch";
+				INFOPLIST_FILE = "RetainCycleTest/RetainCycleTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		82EB85511434401000DA8757 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RetainCycleTest/RetainCycleTest-Prefix.pch";
+				INFOPLIST_FILE = "RetainCycleTest/RetainCycleTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82EB852B1434401000DA8757 /* Build configuration list for PBXProject "RetainCycleTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82EB854D1434401000DA8757 /* Debug */,
+				82EB854E1434401000DA8757 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82EB854F1434401000DA8757 /* Build configuration list for PBXNativeTarget "RetainCycleTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82EB85501434401000DA8757 /* Debug */,
+				82EB85511434401000DA8757 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82EB85281434401000DA8757 /* Project object */;
+}
