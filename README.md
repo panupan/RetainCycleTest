@@ -1,6 +1,6 @@
 Description
 ===========
-Little utility to investigate how to solve the binding retain cycle problem.
+Little utility to investigate how to solve the bindings retain cycle problem.
 
 Usage
 =====
@@ -13,7 +13,7 @@ Testable Views
 ==============
 * NSView - stock view
 * RetainCycleTestView - has a binding that causes a retain cycle
-* TearDownTestView - calls a teardown method when we are done using it
+* TearDownTestView - fixed retain cycle by calling a teardown method when with it
 * SelfProxyTestView - fixed retain cycle by subclassing SelfProxyView and binding through selfProxy 
 
 SelfProxyView based off: [http://theocacao.com/document.page/18](http://theocacao.com/document.page/18)
